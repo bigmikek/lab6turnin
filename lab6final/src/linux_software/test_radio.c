@@ -60,8 +60,8 @@ void print_benchmark(volatile unsigned int *periph_base)
     printf("Elapsed time in clocks = %u\n",stop_time-start_time);
     float so_time = stop_time-start_time;
     float clk_speed = 125000000;
-    float reads = 2048;
-    float cap = 8000000;
+    float reads = 8192;
+    float cap = 1000000;
     float throughput=((reads/cap)/((so_time)/clk_speed));
     
     
